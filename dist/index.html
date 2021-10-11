@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    <script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+    <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>To Do List</title>
+</head>
+<body>
+    <!-- <div id="content">
+        
+        <div class="main-body">
+            <h2>Inbox</h2>
+            <div class="list">
+                <ul>
+                </ul>
+            </div>
+            <div class="top">
+                <h2>Add Task</h2>
+                <button class='addBtn'>+</button>
+            </div>
+        </div>
+        <div class="task-filler"> -->
+            <!-- <input type="text" placeholder="e.g hello world" class="input-1 active-input">
+            <input type="text" placeholder="e.g hello world"> -->
+        <!-- </div>
+    </div> -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-light">ToDo</span>
+            </a>
+            <button class="navbar-toggler" 
+            type="button" data-bs-toggle="collapse" 
+            data-bs-target="#main-nav" 
+            aria-controls="main-nav" 
+            aria-expanded="false" aria-label="main-nav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                    <ul class='navbar-nav'>
+                        <li class="nav-item ">
+                            <a class="nav-link d-md-none" href=”#Inbox”><i class="fas fa-inbox"></i> Inbox </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link d-md-none" href=”#Today”><i class="fas fa-calendar-day"></i> Today </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link d-md-none" href=”#ThisWeek”><i class="fas fa-calendar-week"></i> This Week </a>
+                        </li>
+                        
+                        <div>
+                            <h2 class='fw-bold text-secondary d-md-none'>Add Project</h2>
+                            <li class="nav-item ">
+                                <a class="nav-link d-md-none" href=”#AddProject”><i class="fas fa-plus"></i>  Add Project</a>
+                            </li>
+                        </div>
+                    </ul>    
+              </div>
+        </div>
+    </nav>
+        <!-- main body -->
+        <section id="intro">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 d-none d-md-block vh-100 bg-light">
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action list-group-item-secondary text-dark custom-btn-css" href=”#Today”><i class="fas fa-calendar-day"></i> Today </a>
+                             <a class="list-group-item list-group-item-action list-group-item-secondary  text-dark custom-btn-css" href=”#Inbox”><i class="fas fa-inbox"></i> Inbox </a>
+                            <a class="list-group-item list-group-item-action list-group-item-secondary text-dark custom-btn-css" href=”#ThisWeek”><i class="fas fa-calendar-week"></i> This Week </a>
+                        </div>
+                        <div class="list-group">
+                            <h2 class="fw-bold pt-2 fs-4">Project</h2>
+                            <a class="list-group-item list-group-item-action list-group-item-secondary text-dark text-dark" href=”#”><i class="fas fa-plus"></i>  Add Project</a>
+                        </div>
+                    </div>
+
+                    <div class="col-9 bg-white text-dark inbox-page">
+                        
+                        <div class="container">
+                                <h2 class="pt-4 fw-bold center">Inbox</h2>   
+                                <div class="userDisplay"></div>
+                                <button class=" btn btn-default text-dark custom-addtask-css addTaskBtn"><i class="fas fa-plus"></i> Add Task</a>    
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="bg-dark text-white pt-4 pb-4 fixed-bottom">
+            <h2 class="fw-bold text-center"></h2>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      </body>
+    </html>
+ <script src="main.js"></script>
+</body>
+</html>
